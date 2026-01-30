@@ -66,8 +66,5 @@ public class Movement : MonoBehaviour
         movement = new Vector3(horizontal, vertical, 0).normalized;
         BodyPlayer.linearVelocity = new Vector3(movement.x * Speed, movement.y * Speed, movement.z * Speed) * Time.fixedDeltaTime;
 
-
-
-        Debug.Log(movement);
     }
 }
