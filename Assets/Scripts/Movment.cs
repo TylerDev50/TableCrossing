@@ -49,13 +49,13 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            turnSpeed = 0.5f;
+            turnSpeed = 0.2f;
             isTurn = true;
         }
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            turnSpeed = -0.5f;
+            turnSpeed = -0.2f;
             isTurn = true;
         }
     }
@@ -66,8 +66,5 @@ public class Movement : MonoBehaviour
         movement = new Vector3(horizontal, vertical, 0).normalized;
         BodyPlayer.linearVelocity = new Vector3(movement.x * Speed, movement.y * Speed, movement.z * Speed) * Time.fixedDeltaTime;
 
-
-
-        Debug.Log(movement);
     }
 }
