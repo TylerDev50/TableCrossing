@@ -49,13 +49,13 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            turnSpeed = 0.5f;
+            turnSpeed = 0.2f;
             isTurn = true;
         }
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            turnSpeed = -0.5f;
+            turnSpeed = -0.2f;
             isTurn = true;
         }
     }
