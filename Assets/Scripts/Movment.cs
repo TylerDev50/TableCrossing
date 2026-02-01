@@ -17,6 +17,9 @@ public class Movement : MonoBehaviour
 
     private Vector3 movement;
 
+    public GameObject player;
+    public Transform respawnPoint;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -66,5 +69,15 @@ public class Movement : MonoBehaviour
         movement = new Vector3(horizontal, vertical, 0).normalized;
         BodyPlayer.linearVelocity = new Vector3(movement.x * Speed, movement.y * Speed, movement.z * Speed) * Time.fixedDeltaTime;
 
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Respawn"))
+        {
+            player.transform.position = respawnPoint.position;
+            player.transform.rotation = respawnPoint.rotation;
+            Debug.Log("Player Respawned");
+        }
     }
 }
