@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7915274411914559069}
   - component: {fileID: 3337084026073370320}
   m_Layer: 0
-  m_Name: Car
+  m_Name: SmallerCar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.9, y: 13.27, z: 0}
-  m_LocalScale: {x: 3.5, y: 3.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8572746992400993977}
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e8bf38854315f64d9aca62e08e3913e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Carspeed: 400
+  Carspeed: -500
   CarBody: {fileID: 3337084026073370320}
   CarObject: {fileID: 2184602053866362372}
 --- !u!50 &3337084026073370320
