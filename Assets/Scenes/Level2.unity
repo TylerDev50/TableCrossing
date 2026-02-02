@@ -698,7 +698,8 @@ Transform:
   m_LocalPosition: {x: -10.78, y: 7.77, z: -0.75}
   m_LocalScale: {x: 4.45, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1285899870}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &537676408
@@ -1352,6 +1353,7 @@ GameObject:
   - component: {fileID: 1285899870}
   - component: {fileID: 1285899869}
   - component: {fileID: 1285899871}
+  - component: {fileID: 1285899872}
   m_Layer: 0
   m_Name: DoorTrigger
   m_TagString: Untagged
@@ -1422,12 +1424,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285899868}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.72, y: 6.55, z: -0.66}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.013483027, y: -1.7428569, z: 0.089999974}
+  m_LocalScale: {x: 0.44943824, y: 2.857143, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 537676407}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1285899871
 BoxCollider2D:
@@ -1475,6 +1477,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1285899872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285899868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a761d27f62df45c4280520faf3f463c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1318055105
 GameObject:
   m_ObjectHideFlags: 0
@@ -2233,7 +2247,6 @@ SceneRoots:
   - {fileID: 678240542}
   - {fileID: 614875677}
   - {fileID: 537676407}
-  - {fileID: 1285899870}
   - {fileID: 2014287694}
   - {fileID: 1120118954}
   - {fileID: 1318055107}

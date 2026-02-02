@@ -18,12 +18,12 @@ public class CarMovement : MonoBehaviour
 
         if (CarBody.transform.rotation.eulerAngles.z == 180)
         {
-            CarBody.linearVelocity = new Vector3(0, -Carmovement.y * Carspeed, 0) * Time.fixedDeltaTime;
+            CarBody.linearVelocity = new Vector3(0, Carmovement.y * Carspeed, 0) * Time.fixedDeltaTime;
             Debug.Log("Down");
         }
         else if (CarBody.transform.rotation.eulerAngles.z == 0)
         {
-            CarBody.linearVelocity = new Vector3(0, Carmovement.y * Carspeed, 0) * Time.fixedDeltaTime;
+            CarBody.linearVelocity = new Vector3(0, -Carmovement.y * Carspeed, 0) * Time.fixedDeltaTime;
             Debug.Log("Up");
         }
         else if (CarBody.transform.rotation.eulerAngles.z == 90)
