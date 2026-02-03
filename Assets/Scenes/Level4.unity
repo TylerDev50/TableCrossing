@@ -2826,8 +2826,8 @@ MonoBehaviour:
   Speed: 350
   isTurn: 0
   turnSpeed: 0
-  player: {fileID: 0}
-  respawnPoint: {fileID: 0}
+  player: {fileID: 1601501400}
+  respawnPoint: {fileID: 614875677}
 --- !u!58 &1601501405
 CircleCollider2D:
   m_ObjectHideFlags: 0
